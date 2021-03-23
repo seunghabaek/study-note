@@ -1,0 +1,37 @@
+# 데이터 모델링
+- 개념적 구조를 정하는 것 -> 논리적 모델링
+
+- 데이터베이스 구축에 필요한 걸 정하는 것 -> 물리적 모델링
+
+
+# 데이터 모델
+- Entity(개체) : 저장하고 싶은 데이터의 대상(ex. 학생, 수업, 교수)
+
+- Attribute(속성) : Entity에 대해서 저장하려는 내용.(Table에서 column)
+
+- Ralationship(관계) : Entity들 사이의 연결점
+
+- Constraint(제약 조건) : 데이터에 대한 규칙
+
+- 데이터 모델링의 목적 
+	1. 저장하고자 하는 데이터에서 Entity, Attribute, Relationship, Constraint 파악
+
+	2. 데이터베이스를 구축할 때 기반이 될 모델 만들기.
+
+
+# Relational Model
+- 데이터를 relation, 즉 테이블로 정리해서 표현한 모델.
+
+- 데이터간 관계는 f.k를 통해서 만들 수 있다.
+
+- relation : 테이블, relationship : 테이블 사이 맺어지는 관계
+
+
+# Entity Relationship Model(ERM)
+- Relational Model과는 달리 데이터를 table의 형태로 표현하지는 않음.
+
+- 개체와 관계를 중심으로 모델링.
+
+- 관계의 특징에 따라 모델링하는 방법이 바뀜.
+
+
