@@ -1,0 +1,68 @@
+ ## Basic Statistics
+ # Cases, variables and levels of measurement
+
+  - variables : characteristics of something or someone (ex. characteristics of players)
+ 
+  - cases : something or someone (ex. players themselves)
+  
+  - levels of measurement
+  	
+  	Categorical
+  		- nominal : difference
+  		- ordinal : difference + order
+
+  	Quantitative
+  		- interval : difference + order + similar intervals
+  		- ratio : difference + order + similar intervals + meaningful zero point
+
+  		- discrete : set of separate numbers
+  		- continuous : infinite region of values
+
+
+ # Data matrix and frequency table
+
+  - data matrix shows all datas so, it contains too many things.
+  - frequency table is something like summarized table of data matrix.
+  	-> shows how the valuse are distributed over the cases
+  	-> if you recoded quantitive table to ordinal categories table, you can get the concise valus but lose the details of datas.
+
+
+ # Graphs and shapes od distributions
+
+  - pie chart : immediately see percentage (nominal, ordinal)
+  - bar graph
+  	-> easily retrive exact number
+  	-> has advantage when if comes to dealing with high number of categories
+  - dot plot : using with nominal values
+  - histogram : bars to portray the frequencies of the possible values of a variable (interval, ratio)
+
+
+ # Mode, median and mean
+
+ - mode : value that occurs most frequently. <- categorical
+ - median : the middle value. <- quantitative & influential outliers/skewed
+ - mean : the sum of all the values divided by the number of ovservations <- quantitative
+
+
+ # Range, interquartile range and box plot
+
+ - range : highest value - lowest value
+ 
+ - interquartile range 
+ 	- leaves out the extreme values
+ 	- distribution in four equal parts
+ 	- divided into 4 ranges equally
+ 	- q1, q2, q3
+ 		- q1 : first 25% of all
+ 		- q2 : mean
+ 		- q3 : last 25% of all
+ 		- IQR : q3 - q1
+
+ - box plot : graph to describe center, variability and outliers
+
+
+ # Variance and standard deviation
+
+ - variance(S^2) = sum of (x- x bar)^2 divided by (sample size-1) 
+ - standard deviation(S) = root of variance
+ -
