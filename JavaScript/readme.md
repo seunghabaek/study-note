@@ -45,3 +45,27 @@ alert(message);
 const message = (login == '직원') ? '안녕하세요' :
 (login == '임원') ? '환영합니다.' :
 (login == '') ? '로그인이 필요합니다.' : '';
+
+## 논리 연산자
+
+||(OR), &&(AND), !(NOT)
+
+JavaScript에서만 제공하는 논리연산자의 특별한 부가 기능
+
+1. ||(OR)
+   : "첫번째 true인 값 찾기", 만약 없다면, 마지막 값 반환
+
+'''
+const result = value1 || value2 || value3
+'''
+왼쪽부터 차례대로 진행하면서 가장 "먼저" true가 나오는 값의 value를 반환
+
+2. &&(AND)
+   : "첫번째 false인 값 찾기", 만약 없다면, 마지막 값 반환
+
+'''
+const result = value1 && value2 && value3
+'''
+왼쪽부터 차례데로 진행하면서 가장 "먼저" false가 나오는 값의 value를 반환
+
+- &&의 우선순위는 ||보다 높음.
