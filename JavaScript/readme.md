@@ -84,3 +84,35 @@ let a = prompt('숫자를 입력하세요.', '');
 함수는 동작 하나만 담당해야 함 (단일 책임 원칙)
 
 함수 자체가 주석 역할을 할 수 있어야 한다.
+
+## 주석
+
+- 코드에 대해서 설명하는 주석은 좋은 주석이 아님.
+- 아키텍쳐에 대한 설명이 들어가는 건 좋은 주석.
+- 왜 이렇게 문제를 해결했는지에 대한 설명이 들어가는 것도 좋은 주석.
+
+## 테스트
+
+### Behavior Driven Development
+
+: test + documentation + example
+
+### example (spec)
+
+'''
+describe("pow", function() {
+
+it("주어진 숫자의 n 제곱", function() {
+assert.equal(pow(2, 3), 8);
+});
+});
+'''
+
+### spec(명세서)은 세 가지 구성요소로 이뤄짐.
+
+1. describe("title", function() {...})
+   : 구현하고자 하는 기능에 대한 설명.
+2. it("유스 케이스 설명", function() {...})
+   : 유스케이스에 대한 설명과 테스트 함수
+3. assert.equal(value1, value2)
+   : 기능구현이 제대로 되었다면, it block 안에 코드가 문제없이 동작.
