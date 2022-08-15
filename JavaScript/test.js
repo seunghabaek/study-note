@@ -24,4 +24,12 @@ describe("pow", function () {
       makeTest(x);
     }
   });
+
+  it("n이 음수일 때 결과는 NaN입니다.", function () {
+    assert.isNaN(pow(2, -1));
+  });
+
+  it("n이 정수가 아닐 때 결과는 NaN입니다.", function () {
+    assert.isNaN(pow(2, 1.4));
+  });
 });
