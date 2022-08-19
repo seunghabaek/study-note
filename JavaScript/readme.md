@@ -1,3 +1,5 @@
+# Modern JavaScript
+
 ## 연산자
 
 AND -> &
@@ -181,3 +183,61 @@ a의 길이를 구하고 싶으면 "a.length()"가 아닌 "a.length" 로 구헤�
       alert(arr[i]);
     }
     ```
+
+  - for of
+
+  ```
+  let arr = ["apple", "orange", "pear];
+
+  for (let fruit of fruits) {
+     alert(fruit)
+  }
+  ```
+
+- length
+  : 배열도 property로 length를 갖기 때문에 .length 와 같이 사용
+
+- toString
+  : 배열엔 toString 메서드가 구현되어 있어 이를 호출시 ','를 포함한 문자열 반환.
+
+```
+let arr = [1,2,3];
+
+alert(arr);
+alert(String(arr) === '1,2,3'); // true
+```
+
+### 배열의 메서드
+
+- forEach로 반복
+
+:문법
+
+```
+arr.forEach(function(item, index, array) {
+   //기능
+})
+```
+
+```
+["a","b","c","d"].forEach((item, index, array) => {
+   alert(`${item} is at index ${index} in ${array}`);
+})
+```
+
+- map
+  : arr,map은 배열 요소 전체를 대상으로 함수를 호출하고, 그 결과를 다시 배열로 반환.
+  : 문법
+
+```
+let result = arr.map(function(item, index, array) {
+   // 새로운 값 반환
+})
+```
+
+```
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+alert(lengths)
+```
+
+# Browser

@@ -33,3 +33,33 @@ describe("pow", function () {
     assert.isNaN(pow(2, 1.4));
   });
 });
+
+let music = ["Jazz", "Blues"];
+
+// 배열 뒤에 "Rock-n-Roll" 추가
+music.push("Rock-n-Roll");
+// 배열 정중앙의 요소를 "Classics"로 변경
+music[Math.floor((music.length - 1) / 2)];
+// "Rap"와 "Raggae" 를 배열의 앞에 추가
+music.unshift("Rap", "Raggae");
+
+const sumInput = () => {
+  let numbers = [];
+
+  while (true) {
+    let value = prompt("숫자를 입력해주세요", "");
+
+    if (value === "" || value === null || isFinite(value)) break;
+    numbers.push(+value);
+  }
+
+  let sum = 0;
+  for (number of numbers) {
+    sum += number;
+  }
+  return sum;
+};
+
+alert(sumInput());
+
+let dashStyle = ["background-color", "list-style-image", "-webkit-transition"];
