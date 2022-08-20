@@ -49,8 +49,8 @@ function greets(name: string): string {
 
 ```
 const printCoord = (pt:{x:number, y:number}) => {
-    console.log(`The coordinate's x value is ${pt.x});
-    console.log(`The coordinate's y value is ${pt.y});
+    console.log(`The coordinate's x value is ${pt.x}`);
+    console.log(`The coordinate's y value is ${pt.y}`);
 }
 
 printCoord({x:7, y:5})
@@ -79,3 +79,37 @@ const printId = (id: string|number) => {
 printId("slug0326");
 printId(1234);
 ```
+
+8. 타입 별칭
+   : 타입의 객체를 사용자가 직접 지정할 수 있음 (type, interface)
+
+```
+type Point = {
+    x:number,
+    y:number
+}
+
+const printCoord = (pt:Point) => {
+    console.log(`The coordinate's x value is ${pt.x}`);
+    console.log(`The coordinate's y value is ${pt.y}`);
+}
+
+printCoord({x:7, y:5})
+```
+
+9. Interface
+   : interface는 type 별칭과 거의 동일한 방식으로 사용 가능.
+
+```
+interface Point = {
+    x:number,
+    y:number,
+}
+
+const printCoord = (pt:Point) => {
+    console.log(`The coordinate's x value is ${pt.x}`);
+    console.log(`The coordinate's y value is ${pt.y}`);
+}
+```
+
+: type 별칭과 다른 점은 interface를 활용할 경우 무한한 확장이 가능하다는 점.
