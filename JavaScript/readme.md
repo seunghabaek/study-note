@@ -240,4 +240,25 @@ let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
 alert(lengths)
 ```
 
+## JSON과 메서드
+
+### JSON.stringify
+
+- JSON.stringify: 객체를 JSON으로 변환
+- JSON.parse: JSON을 객체로 변환
+
+```
+let student = {
+   name: 'John',
+   age: 30,
+   isAdmin: false,
+   courses: ['html', 'css', 'js'],
+   wife: null,
+}
+
+let json = JSON.stringify(student);
+```
+
+: 이렇게 변환된 문자열은 JSON으로 인코딩된, 직렬화 처리된, 문자열로 변환된, 결집된 객체라고 부름.
+
 # Browser
